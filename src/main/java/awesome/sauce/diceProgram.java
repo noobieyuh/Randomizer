@@ -1,4 +1,6 @@
 package awesome.sauce;
 
-public class diceProgram {
+public class diceProgram
+{
+
 }
