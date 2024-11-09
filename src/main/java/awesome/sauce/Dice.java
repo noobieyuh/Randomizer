@@ -13,8 +13,6 @@ public class Dice implements ActionListener
 {
     // frame or window
     JFrame diceFrame = new JFrame("Randomizer");
-    // labels
-    JLabel diceLabel = new JLabel("Thanks for trying Randomizer!");
     // button
     JButton diceButton = new JButton("Click me to roll a dice!");
     // image
@@ -24,15 +22,12 @@ public class Dice implements ActionListener
     {
         diceButton.setBounds(150, 150, 250, 50);
 
-        diceLabel.setBounds(500, 400, 100, 100);
-
         diceButton.setFocusable(false);
         diceButton.addActionListener(this);
         diceButton.setBackground(Color.BLACK);
         diceButton.setForeground(Color.WHITE);
 
         diceFrame.add(diceButton);
-        diceFrame.add(diceLabel);
 
         diceFrame.setSize(500,500);
         diceFrame.setVisible(true);

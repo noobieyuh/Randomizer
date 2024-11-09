@@ -1,6 +1,10 @@
 package awesome.sauce;
 
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 import javax.swing.*;
+import java.io.File;
 
 public class DiceRoll
 {
@@ -13,7 +17,7 @@ public class DiceRoll
 
     DiceRoll()
     {
-        int randomX = (int) (Math.random() * 1000) + 100;
+        int randomX = (int) (Math.random() * 1000) + 500;
         int randomY = (int) (Math.random() * 500) + 100;
         int diceRollRandom = (int) (Math.random() * 6) + 1;
 
@@ -27,6 +31,7 @@ public class DiceRoll
         if(diceRollRandom == 1)
         {
             dice = "src\\main\\resources\\diceroll1.png";
+            playSound("boo.wav");
         }
         if(diceRollRandom == 2)
         {
@@ -47,6 +52,7 @@ public class DiceRoll
         if(diceRollRandom == 6)
         {
             dice = "src\\main\\resources\\diceroll6.png";
+            playSound("hooray.wav");
         }
 
         ImageIcon diceRollResultImage = new ImageIcon(dice);
@@ -57,8 +63,22 @@ public class DiceRoll
         diceRollFrame.add(diceRollDisplay);
 
         diceRollFrame.setLocation(randomX, randomY);
+    }
 
-
+    public void playSound(String soundName)
+    {
+        try
+        {
+            AudioInputStream audioStream = AudioSystem.getAudioInputStream(new File("src\\main\\resources\\" + soundName));
+            Clip audioClip = AudioSystem.getClip();
+            audioClip.open(audioStream);
+            audioClip.start();
+        }
+        catch(Exception err)
+        {
+            System.out.println("Couldn't play the audio...");
+            err.printStackTrace();
+        }
     }
 
 
