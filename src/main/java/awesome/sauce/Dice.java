@@ -22,16 +22,17 @@ public class Dice implements ActionListener
 
     Dice()
     {
-        diceLabel.setBounds(100, 0, 200, 100);
+        diceButton.setBounds(150, 150, 250, 50);
 
-        diceButton.setBounds(250, 250, 100, 100);
-        diceButton.addActionListener(this);
-        diceButton.setBackground(Color.CYAN);
+        diceLabel.setBounds(500, 400, 100, 100);
+
         diceButton.setFocusable(false);
+        diceButton.addActionListener(this);
+        diceButton.setBackground(Color.BLACK);
+        diceButton.setForeground(Color.WHITE);
 
-
-        diceFrame.add(diceLabel);
         diceFrame.add(diceButton);
+        diceFrame.add(diceLabel);
 
         diceFrame.setSize(500,500);
         diceFrame.setVisible(true);
