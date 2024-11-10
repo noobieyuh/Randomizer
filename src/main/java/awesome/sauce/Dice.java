@@ -23,17 +23,17 @@ public class Dice implements ActionListener
 
     Dice()
     {
-        System.out.println("How many dice would you like to roll? (1-12, the more dices, the more time it'll take to show up) ");
+        System.out.println("How many dice would you like to roll? (1-15, the more dices, the more time it'll take to show up) ");
         diceAmount = input.nextInt();
         if(diceAmount <= 0)
         {
             System.out.println("You cannot have negative or zero dices");
             System.exit(0);
         }
-        // if having more than 10-12 dices didn't lag the program, then i would've added up to 20
-        if(diceAmount > 12)
+        // if having more than 10 dices didn't lag the program, then i would've added up to like 100 hehe
+        if(diceAmount > 20)
         {
-            System.out.println("You cannot have more than 12 dices at a time (more dices, more instances, more lag).");
+            System.out.println("You cannot have more than 20 dices at a time (more dices, more instances, more lag).");
             System.exit(0);
         }
 
@@ -173,13 +173,167 @@ public class Dice implements ActionListener
                 DiceRoll createDiceEleven = new DiceRoll();
                 DiceRoll createDiceTwelve = new DiceRoll();
             }
-
+            if(diceAmount == 13)
+            {
+                DiceRoll createDiceOne = new DiceRoll();
+                DiceRoll createDiceTwo = new DiceRoll();
+                DiceRoll createDiceThree = new DiceRoll();
+                DiceRoll createDiceFour = new DiceRoll();
+                DiceRoll createDiceFive = new DiceRoll();
+                DiceRoll createDiceSix = new DiceRoll();
+                DiceRoll createDiceSeven = new DiceRoll();
+                DiceRoll createDiceEight = new DiceRoll();
+                DiceRoll createDiceNine = new DiceRoll();
+                DiceRoll createDiceTen = new DiceRoll();
+                DiceRoll createDiceEleven = new DiceRoll();
+                DiceRoll createDiceTwelve = new DiceRoll();
+                DiceRoll createDiceThirteen = new DiceRoll();
+            }
+            if(diceAmount == 14)
+            {
+                DiceRoll createDiceOne = new DiceRoll();
+                DiceRoll createDiceTwo = new DiceRoll();
+                DiceRoll createDiceThree = new DiceRoll();
+                DiceRoll createDiceFour = new DiceRoll();
+                DiceRoll createDiceFive = new DiceRoll();
+                DiceRoll createDiceSix = new DiceRoll();
+                DiceRoll createDiceSeven = new DiceRoll();
+                DiceRoll createDiceEight = new DiceRoll();
+                DiceRoll createDiceNine = new DiceRoll();
+                DiceRoll createDiceTen = new DiceRoll();
+                DiceRoll createDiceEleven = new DiceRoll();
+                DiceRoll createDiceTwelve = new DiceRoll();
+                DiceRoll createDiceThirteen = new DiceRoll();
+                DiceRoll createDiceFourteen = new DiceRoll();
+            }
+            if(diceAmount == 15)
+            {
+                DiceRoll createDiceOne = new DiceRoll();
+                DiceRoll createDiceTwo = new DiceRoll();
+                DiceRoll createDiceThree = new DiceRoll();
+                DiceRoll createDiceFour = new DiceRoll();
+                DiceRoll createDiceFive = new DiceRoll();
+                DiceRoll createDiceSix = new DiceRoll();
+                DiceRoll createDiceSeven = new DiceRoll();
+                DiceRoll createDiceEight = new DiceRoll();
+                DiceRoll createDiceNine = new DiceRoll();
+                DiceRoll createDiceTen = new DiceRoll();
+                DiceRoll createDiceEleven = new DiceRoll();
+                DiceRoll createDiceTwelve = new DiceRoll();
+                DiceRoll createDiceThirteen = new DiceRoll();
+                DiceRoll createDiceFourteen = new DiceRoll();
+                DiceRoll createDiceFifteen = new DiceRoll();
+            }
+            if(diceAmount == 16)
+            {
+                DiceRoll createDiceOne = new DiceRoll();
+                DiceRoll createDiceTwo = new DiceRoll();
+                DiceRoll createDiceThree = new DiceRoll();
+                DiceRoll createDiceFour = new DiceRoll();
+                DiceRoll createDiceFive = new DiceRoll();
+                DiceRoll createDiceSix = new DiceRoll();
+                DiceRoll createDiceSeven = new DiceRoll();
+                DiceRoll createDiceEight = new DiceRoll();
+                DiceRoll createDiceNine = new DiceRoll();
+                DiceRoll createDiceTen = new DiceRoll();
+                DiceRoll createDiceEleven = new DiceRoll();
+                DiceRoll createDiceTwelve = new DiceRoll();
+                DiceRoll createDiceThirteen = new DiceRoll();
+                DiceRoll createDiceFourteen = new DiceRoll();
+                DiceRoll createDiceFifteen = new DiceRoll();
+                DiceRoll createDiceSixteen = new DiceRoll();
+            }
+            if(diceAmount == 17)
+            {
+                DiceRoll createDiceOne = new DiceRoll();
+                DiceRoll createDiceTwo = new DiceRoll();
+                DiceRoll createDiceThree = new DiceRoll();
+                DiceRoll createDiceFour = new DiceRoll();
+                DiceRoll createDiceFive = new DiceRoll();
+                DiceRoll createDiceSix = new DiceRoll();
+                DiceRoll createDiceSeven = new DiceRoll();
+                DiceRoll createDiceEight = new DiceRoll();
+                DiceRoll createDiceNine = new DiceRoll();
+                DiceRoll createDiceTen = new DiceRoll();
+                DiceRoll createDiceEleven = new DiceRoll();
+                DiceRoll createDiceTwelve = new DiceRoll();
+                DiceRoll createDiceThirteen = new DiceRoll();
+                DiceRoll createDiceFourteen = new DiceRoll();
+                DiceRoll createDiceFifteen = new DiceRoll();
+                DiceRoll createDiceSixteen = new DiceRoll();
+                DiceRoll createDiceSeventeen = new DiceRoll();
+            }
+            if(diceAmount == 18)
+            {
+                DiceRoll createDiceOne = new DiceRoll();
+                DiceRoll createDiceTwo = new DiceRoll();
+                DiceRoll createDiceThree = new DiceRoll();
+                DiceRoll createDiceFour = new DiceRoll();
+                DiceRoll createDiceFive = new DiceRoll();
+                DiceRoll createDiceSix = new DiceRoll();
+                DiceRoll createDiceSeven = new DiceRoll();
+                DiceRoll createDiceEight = new DiceRoll();
+                DiceRoll createDiceNine = new DiceRoll();
+                DiceRoll createDiceTen = new DiceRoll();
+                DiceRoll createDiceEleven = new DiceRoll();
+                DiceRoll createDiceTwelve = new DiceRoll();
+                DiceRoll createDiceThirteen = new DiceRoll();
+                DiceRoll createDiceFourteen = new DiceRoll();
+                DiceRoll createDiceFifteen = new DiceRoll();
+                DiceRoll createDiceSixteen = new DiceRoll();
+                DiceRoll createDiceSeventeen = new DiceRoll();
+                DiceRoll createDiceEighteen = new DiceRoll();
+            }
+            if(diceAmount == 19)
+            {
+                DiceRoll createDiceOne = new DiceRoll();
+                DiceRoll createDiceTwo = new DiceRoll();
+                DiceRoll createDiceThree = new DiceRoll();
+                DiceRoll createDiceFour = new DiceRoll();
+                DiceRoll createDiceFive = new DiceRoll();
+                DiceRoll createDiceSix = new DiceRoll();
+                DiceRoll createDiceSeven = new DiceRoll();
+                DiceRoll createDiceEight = new DiceRoll();
+                DiceRoll createDiceNine = new DiceRoll();
+                DiceRoll createDiceTen = new DiceRoll();
+                DiceRoll createDiceEleven = new DiceRoll();
+                DiceRoll createDiceTwelve = new DiceRoll();
+                DiceRoll createDiceThirteen = new DiceRoll();
+                DiceRoll createDiceFourteen = new DiceRoll();
+                DiceRoll createDiceFifteen = new DiceRoll();
+                DiceRoll createDiceSixteen = new DiceRoll();
+                DiceRoll createDiceSeventeen = new DiceRoll();
+                DiceRoll createDiceEighteen = new DiceRoll();
+                DiceRoll createDiceNineteen = new DiceRoll();
+            }
+            if(diceAmount == 20)
+            {
+                DiceRoll createDiceOne = new DiceRoll();
+                DiceRoll createDiceTwo = new DiceRoll();
+                DiceRoll createDiceThree = new DiceRoll();
+                DiceRoll createDiceFour = new DiceRoll();
+                DiceRoll createDiceFive = new DiceRoll();
+                DiceRoll createDiceSix = new DiceRoll();
+                DiceRoll createDiceSeven = new DiceRoll();
+                DiceRoll createDiceEight = new DiceRoll();
+                DiceRoll createDiceNine = new DiceRoll();
+                DiceRoll createDiceTen = new DiceRoll();
+                DiceRoll createDiceEleven = new DiceRoll();
+                DiceRoll createDiceTwelve = new DiceRoll();
+                DiceRoll createDiceThirteen = new DiceRoll();
+                DiceRoll createDiceFourteen = new DiceRoll();
+                DiceRoll createDiceFifteen = new DiceRoll();
+                DiceRoll createDiceSixteen = new DiceRoll();
+                DiceRoll createDiceSeventeen = new DiceRoll();
+                DiceRoll createDiceEighteen = new DiceRoll();
+                DiceRoll createDiceNineteen = new DiceRoll();
+                DiceRoll createDiceTwenty = new DiceRoll();
+            }
 
 
             System.out.println("Rolling dice(s)...");
         }
     }
-
     // custom music function
     public void playAudio(String audioSound)
     {
@@ -196,5 +350,4 @@ public class Dice implements ActionListener
             error.printStackTrace();
         }
     }
-
 }
